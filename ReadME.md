@@ -21,5 +21,3 @@
 ### Future Changes
 
 + Add Heruko hosted live demo
-+ Improve comments
-+ Improve variable names
