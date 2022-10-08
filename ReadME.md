@@ -23,7 +23,6 @@
 
 ### Future Changes
 
-+ Add demo GIF
 + Add Heruko hosted live demo
 + Improve comments
 + Improve variable names
