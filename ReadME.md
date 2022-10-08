@@ -1,8 +1,5 @@
 # Weather Project
 
-<!--
-[![Live Demo](http://pepy.tech/badge/shallow-backup)](http://pepy.tech/count/shallow-backup)
--->
 
 `weather_project` is a web application that allows users to check weather in various cities all around the world
 
