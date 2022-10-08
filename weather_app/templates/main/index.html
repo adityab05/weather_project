@@ -15,19 +15,6 @@
 </head>
 
 <body>
-    <!--
-    <div class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
-        <div class="container">
-            <a href="../" class="navbar-brand">Weather App <span style="color: rgb(39, 117, 161);"> <strong> - Django
-                        Framework</strong>
-                </span> </a>
-            <a href="https://openweathermap.org" class="navbar-tech">OpenWeather - Get Your API</a>
-        </div>
-    </div>
-    
-
-    <br /><br /> <br>
-    -->
     <div id="jumbotron" class="jumbotron" style="text-align: center; margin-top:-50px">
         <h1 class="display-5">What's the weather like ? </h1>
 
@@ -35,14 +22,14 @@
     </div>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <form method="post" class="col-md"">
-      {% csrf_token %}
-      <div class=" input-group">
+        <form method="post" class="col-md">
+            {% csrf_token %}
+            <div class=" input-group">
 
-            <input type="text" class="form-control" name="city" placeholder="Choose Your City ...">
-            <div class="input-group-btn">
-                <button type="submit" class="btn btn-primary">Search</button>
-            </div>
+                <input type="text" class="form-control" name="city" placeholder="Choose Your City ...">
+                <div class="input-group-btn">
+                    <button type="submit" class="btn btn-primary">Search</button>
+                </div>
             </div>
             <form>
     </nav>
@@ -50,24 +37,18 @@
 
     <div class="row">
         {% if country_code and temp and pressure and humidity %}
-        <div class="col d-flex justify-content-center" ">
-      <div class=" card text-white bg-light mb-6">
-            <div class=" card-body">
-                <h4><span class="badge badge-primary">City Name :</span> {{country_code}}</h4>
-                <h4><span class="badge badge-primary">Temperature :</span> {{temp}}</h4>
-                <!--
-                <h4><span class="badge badge-primary">Pressure :</span> {{pressure}} </h4>
-                <h4><span class="badge badge-primary">Humidity : </span> {{humidity}}</h4>
-                -->
-                <h4><span class="badge badge-primary">Forecast : </span> {{main}}
-                    <img src="http://openweathermap.org/img/w/{{icon}}.png" alt="Image" style="width:70px">
-                </h4>
-                <!--
-                <h4><span class="badge badge-primary">Description : </span> {{description}}</h4>
-                -->
+        <div class="col d-flex justify-content-center">
+            <div class=" card text-white bg-light mb-6">
+                <div class=" card-body">
+                    <h4><span class="badge badge-primary">City Name :</span> {{country_code}}</h4>
+                    <h4><span class="badge badge-primary">Temperature :</span> {{temp}}</h4>
+                    <h4><span class="badge badge-primary">Forecast : </span> {{main}}
+                        <img src="http://openweathermap.org/img/w/{{icon}}.png" alt="Image" style="width:70px">
+                    </h4>
+
+                </div>
+                {% endif %}
             </div>
-            {% endif %}
-        </div>
 </body>
 
 
