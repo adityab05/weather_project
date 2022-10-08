@@ -6,9 +6,9 @@
 
 `weather_project` is a web application that allows users to check weather in various cities all around the world
 
-<!--
-![ToDo List GIF Demo](demo_images/demo.gif)
--->
+
+![Weather Project GIF Demo](demo_images/demo.gif)
+
 
 ### Project Objective
 
