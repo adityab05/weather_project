@@ -12,7 +12,7 @@ def index(request):
         
         try:
             source = urllib.request.urlopen('https://api.openweathermap.org/data/2.5/weather?q='
-                                        +city+'&units=metric&appid=7e23c1783d17deb5eb1399fac7447073').read()
+                                        +city+'&units=metric&appid={}').read()
         except Exception:
             return HttpResponseBadRequest("No Such City Found")
 
